@@ -1,0 +1,291 @@
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes shine {
+  from {
+    left: -120%;
+  }
+  to {
+    left: 130%;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-8px);
+  }
+  50% {
+    transform: translateY(0);
+  }
+  75% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.hero-content span {
+  animation: fadeDown 0.8s ease both;
+}
+
+.hero-content h1 {
+  animation: fadeLeft 1s ease 0.2s both;
+}
+
+.hero-content p {
+  animation: fadeLeft 1s ease 0.4s both;
+}
+
+.hero-buttons {
+  animation: fadeUp 1s ease 0.6s both;
+}
+
+.category-card {
+  animation: zoomIn 0.8s ease both;
+}
+
+.featured-card {
+  animation: fadeUp 0.9s ease both;
+}
+
+.deal-card {
+  animation: fadeUp 0.9s ease both;
+}
+
+.product-card {
+  animation: fadeUp 0.9s ease both;
+}
+
+.trending-card {
+  animation: zoomIn 0.9s ease both;
+}
+
+.feature-box {
+  animation: fadeUp 0.8s ease both;
+}
+
+.brand-card {
+  animation: zoomIn 0.8s ease both;
+}
+
+.review-card {
+  animation: fadeUp 0.8s ease both;
+}
+
+.newsletter {
+  animation: fadeUp 1s ease both;
+}
+
+.app-content {
+  animation: fadeUp 1s ease both;
+}
+
+.instagram-grid img {
+  animation: zoomIn 0.8s ease both;
+}
+
+.footer-top {
+  animation: fadeUp 1s ease both;
+}
+
+.hero img {
+  transition: transform 8s linear;
+}
+
+.hero:hover img {
+  transform: scale(1.08);
+}
+
+.category-card img,
+.featured-card img,
+.deal-card img,
+.product-card img,
+.trending-card img,
+.instagram-grid img {
+  transition: transform 0.5s ease;
+}
+
+.category-card:hover img,
+.featured-card:hover img,
+.deal-card:hover img,
+.product-card:hover img,
+.trending-card:hover img,
+.instagram-grid img:hover {
+  transform: scale(1.08);
+}
+
+.primary-btn,
+.secondary-btn,
+.deal-info button,
+.trending-card button,
+.newsletter-form button,
+.app-buttons a {
+  transition: all 0.35s ease;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover,
+.deal-info button:hover,
+.trending-card button:hover,
+.newsletter-form button:hover,
+.app-buttons a:hover {
+  transform: translateY(-5px);
+}
+
+.nav-item:hover i {
+  animation: bounce 0.5s ease;
+}
+
+.category-card:nth-child(odd) {
+  animation: float 5s ease-in-out infinite;
+}
+
+.category-card:nth-child(even) {
+  animation: float 6s ease-in-out infinite;
+}
+
+.scroll-top {
+  animation: pulse 2s infinite;
+}
+
+.offer-tag,
+.badge {
+  animation: pulse 2.5s infinite;
+}
+
+.brand-card:hover img {
+  animation: pulse 0.6s;
+}
+
+.social-links a:hover {
+  animation: rotate 0.6s linear;
+}
+
+.deal-card::before,
+.product-card::before,
+.trending-card::before,
+.featured-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255, 255, 255, 0.35),
+    transparent
+  );
+  transform: skewX(-25deg);
+}
+
+.deal-card:hover::before,
+.product-card:hover::before,
+.trending-card:hover::before,
+.featured-card:hover::before {
+  animation: shine 0.8s linear;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background: #ff9900;
+  color: #fff;
+}
+
+button:active,
+a:active {
+  transform: scale(0.97);
+}

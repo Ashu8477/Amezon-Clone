@@ -1,0 +1,778 @@
+@media (max-width: 1400px) {
+  :root {
+    --container: 1200px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    grid-template-columns: 150px 130px 1fr;
+    gap: 20px;
+  }
+
+  .nav-icons {
+    grid-column: 1/-1;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sale-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .sale-right {
+    height: 420px;
+  }
+
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+
+  .app-image {
+    height: 450px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content {
+    left: 40px;
+    right: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .menu-bar {
+    gap: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .sale-left {
+    padding: 50px;
+  }
+
+  .sale-left h2 {
+    font-size: 48px;
+  }
+
+  .app-text {
+    padding: 50px;
+  }
+
+  .app-text h2 {
+    font-size: 42px;
+  }
+
+  .newsletter {
+    padding: 60px 35px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .navbar {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .delivery {
+    display: none;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .nav-icons {
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .nav-item span {
+    font-size: 12px;
+  }
+
+  .menu-bar {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    height: 520px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-content {
+    left: 25px;
+    right: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 220px;
+  }
+
+  .quick-categories {
+    margin: 40px auto;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card img {
+    height: 150px;
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid,
+  .features-grid,
+  .review-grid,
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instagram-grid img {
+    height: 180px;
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .sale-left {
+    padding: 35px;
+  }
+
+  .sale-left h2 {
+    font-size: 38px;
+  }
+
+  .sale-left p {
+    font-size: 16px;
+  }
+
+  .app-text {
+    padding: 35px;
+  }
+
+  .app-text h2 {
+    font-size: 36px;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+  }
+
+  .app-buttons a {
+    width: 220px;
+  }
+
+  .newsletter {
+    padding: 50px 25px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 34px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    height: 58px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+    right: 18px;
+    bottom: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 470px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card h3 {
+    font-size: 16px;
+  }
+
+  .featured-card img,
+  .deal-card img,
+  .product-card img,
+  .trending-card img {
+    height: 220px;
+  }
+
+  .sale-left h2 {
+    font-size: 32px;
+  }
+
+  .sale-right {
+    height: 260px;
+  }
+
+  .app-image {
+    height: 260px;
+  }
+
+  .app-text h2 {
+    font-size: 30px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 28px;
+  }
+
+  .newsletter-content p {
+    font-size: 15px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid img {
+    height: 240px;
+  }
+
+  .nav-icons {
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    height: 48px;
+  }
+
+  .search-box select {
+    width: 75px;
+  }
+
+  .search-box button {
+    width: 58px;
+  }
+}
+@media (max-width: 1400px) {
+  :root {
+    --container: 1200px;
+  }
+
+  .hero-content h1 {
+    font-size: 60px;
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid {
+    gap: 22px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .navbar {
+    grid-template-columns: 150px 130px 1fr;
+    gap: 20px;
+  }
+
+  .nav-icons {
+    grid-column: 1/-1;
+    justify-content: center;
+    margin-top: 15px;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .brand-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .review-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sale-banner {
+    grid-template-columns: 1fr;
+  }
+
+  .sale-right {
+    height: 420px;
+  }
+
+  .app-content {
+    grid-template-columns: 1fr;
+  }
+
+  .app-image {
+    height: 450px;
+  }
+
+  .footer-top {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 992px) {
+  .hero {
+    height: 600px;
+  }
+
+  .hero-content {
+    left: 40px;
+    right: 40px;
+  }
+
+  .hero-content h1 {
+    font-size: 50px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  .menu-bar {
+    gap: 20px;
+  }
+
+  .section-title h2 {
+    font-size: 32px;
+  }
+
+  .sale-left {
+    padding: 50px;
+  }
+
+  .sale-left h2 {
+    font-size: 48px;
+  }
+
+  .app-text {
+    padding: 50px;
+  }
+
+  .app-text h2 {
+    font-size: 42px;
+  }
+
+  .newsletter {
+    padding: 60px 35px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-bar {
+    display: none;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .navbar {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .delivery {
+    display: none;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+
+  .nav-icons {
+    justify-content: space-around;
+    gap: 10px;
+  }
+
+  .nav-item span {
+    font-size: 12px;
+  }
+
+  .menu-bar {
+    padding: 14px 20px;
+  }
+
+  .hero {
+    height: 520px;
+  }
+
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.55);
+  }
+
+  .hero-content {
+    left: 25px;
+    right: 25px;
+  }
+
+  .hero-content h1 {
+    font-size: 40px;
+  }
+
+  .hero-content p {
+    line-height: 1.7;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 220px;
+  }
+
+  .quick-categories {
+    margin: 40px auto;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card img {
+    height: 150px;
+  }
+
+  .featured-grid,
+  .deal-grid,
+  .best-selling-grid,
+  .trending-grid,
+  .features-grid,
+  .review-grid,
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .instagram-grid img {
+    height: 180px;
+  }
+
+  .section-title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .section-title h2 {
+    font-size: 28px;
+  }
+
+  .sale-left {
+    padding: 35px;
+  }
+
+  .sale-left h2 {
+    font-size: 38px;
+  }
+
+  .sale-left p {
+    font-size: 16px;
+  }
+
+  .app-text {
+    padding: 35px;
+  }
+
+  .app-text h2 {
+    font-size: 36px;
+  }
+
+  .app-buttons {
+    flex-direction: column;
+  }
+
+  .app-buttons a {
+    width: 220px;
+  }
+
+  .newsletter {
+    padding: 50px 25px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 34px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    border-radius: 20px;
+  }
+
+  .newsletter-form input {
+    width: 100%;
+  }
+
+  .newsletter-form button {
+    width: 100%;
+    height: 58px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .scroll-top {
+    width: 50px;
+    height: 50px;
+    right: 18px;
+    bottom: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 470px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .hero-content p {
+    font-size: 15px;
+  }
+
+  .quick-categories .container {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card h3 {
+    font-size: 16px;
+  }
+
+  .featured-card img,
+  .deal-card img,
+  .product-card img,
+  .trending-card img {
+    height: 220px;
+  }
+
+  .sale-left h2 {
+    font-size: 32px;
+  }
+
+  .sale-right {
+    height: 260px;
+  }
+
+  .app-image {
+    height: 260px;
+  }
+
+  .app-text h2 {
+    font-size: 30px;
+  }
+
+  .newsletter-content h2 {
+    font-size: 28px;
+  }
+
+  .newsletter-content p {
+    font-size: 15px;
+  }
+
+  .instagram-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .instagram-grid img {
+    height: 240px;
+  }
+
+  .nav-icons {
+    flex-wrap: wrap;
+  }
+
+  .search-box {
+    height: 48px;
+  }
+
+  .search-box select {
+    width: 75px;
+  }
+
+  .search-box button {
+    width: 58px;
+  }
+}
